@@ -6,7 +6,6 @@ TagManager:
   tags:
   - Fire
   - Enemy
-  - Colletable
   layers:
   - Default
   - TransparentFX
