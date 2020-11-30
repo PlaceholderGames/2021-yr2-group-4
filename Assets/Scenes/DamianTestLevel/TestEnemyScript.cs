@@ -9,10 +9,13 @@ public class TestEnemyScript : MonoBehaviour
 
     Transform target;
     NavMeshAgent agent;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         target = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
         
@@ -22,20 +25,25 @@ public class TestEnemyScript : MonoBehaviour
     void Update()
     {
         float distance = Vector3.Distance(target.position, transform.position);
-
+        animator.SetBool("IsWalking", false);
+        //If player in radius, chase 
         if (distance <= lookRadius)
         {
+            //Chase function
             agent.SetDestination(target.position);
-
+            //If enemy is chasing player change animation from idle to walk
+            animator.SetBool("IsWalking", true);
+            //Look at player when close
             if(distance <= agent.stoppingDistance)
             {
-                //Attack the target
+                
                 FaceTarget();
             }
         }
         
     }
 
+    //Look at player when close function
     void FaceTarget()
     {
         Vector3 direction = (target.position - transform.position).normalized;
