@@ -18,7 +18,7 @@ public class TestEnemyScript : MonoBehaviour
 
         target = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
-        
+
     }
 
     // Update is called once per frame
@@ -34,10 +34,12 @@ public class TestEnemyScript : MonoBehaviour
             //If enemy is chasing player change animation from idle to walk
             animator.SetBool("IsWalking", true);
             //Look at player when close
-            if(distance <= agent.stoppingDistance)
+            if (distance <= agent.stoppingDistance)
             {
-                
                 FaceTarget();
+                animator.SetBool("Attack", true);
+                Invoke("Restart", 2); //2 is the time
+                //Restart();
             }
         }
         
@@ -57,4 +59,8 @@ public class TestEnemyScript : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
 
+    void Restart()
+    {
+        Application.LoadLevel(Application.loadedLevel);
+    }
 }
