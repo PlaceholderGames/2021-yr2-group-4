@@ -9,33 +9,43 @@ public class TestEnemyScript : MonoBehaviour
 
     Transform target;
     NavMeshAgent agent;
+    Animator animator;
 
     // Start is called before the first frame update
     void Start()
     {
+        animator = GetComponent<Animator>();
+
         target = PlayerManager.instance.player.transform;
         agent = GetComponent<NavMeshAgent>();
-        
+
     }
 
     // Update is called once per frame
     void Update()
     {
         float distance = Vector3.Distance(target.position, transform.position);
-
+        animator.SetBool("IsWalking", false);
+        //If player in radius, chase 
         if (distance <= lookRadius)
         {
+            //Chase function
             agent.SetDestination(target.position);
-
-            if(distance <= agent.stoppingDistance)
+            //If enemy is chasing player change animation from idle to walk
+            animator.SetBool("IsWalking", true);
+            //Look at player when close
+            if (distance <= agent.stoppingDistance)
             {
-                //Attack the target
                 FaceTarget();
+                animator.SetBool("Attack", true);
+                Invoke("Restart", 2); //2 is the time
+                //Restart();
             }
         }
         
     }
 
+    //Look at player when close function
     void FaceTarget()
     {
         Vector3 direction = (target.position - transform.position).normalized;
@@ -49,4 +59,8 @@ public class TestEnemyScript : MonoBehaviour
         Gizmos.DrawWireSphere(transform.position, lookRadius);
     }
 
+    void Restart()
+    {
+        Application.LoadLevel(Application.loadedLevel);
+    }
 }
