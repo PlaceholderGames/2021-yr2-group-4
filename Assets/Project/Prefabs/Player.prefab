@@ -774,7 +774,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 8436447086187824934}
   m_LocalRotation: {x: 0, y: 0.7071068, z: 0, w: 0.7071068}
-  m_LocalPosition: {x: 0.381, y: -0.423, z: 0.606}
+  m_LocalPosition: {x: 0.5, y: -0.423, z: 0.6}
   m_LocalScale: {x: 0.2, y: 0.2, z: 0.2}
   m_Children:
   - {fileID: 2154867026653216819}
@@ -954,7 +954,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   gunDamage: 1
   fireRate: 1
-  weaponRange: 50
+  weaponRange: 100
   hitForce: 100
   gunEnd: {fileID: 2154867026653216819}
 --- !u!114 &4127891409887257396
