@@ -200,7 +200,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 0}
   isPaused: 0
   transition: {fileID: 5422442570863541961}
-  transitionTime: 1
+  transitionTime: 2
 --- !u!1 &5422442570863541963
 GameObject:
   m_ObjectHideFlags: 0

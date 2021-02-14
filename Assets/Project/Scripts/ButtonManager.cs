@@ -6,6 +6,7 @@ using System.Collections.Generic;
 public class ButtonManager : MonoBehaviour
 {
     public GameObject pauseMenu;
+    public GameObject OnScreenUI;
     public bool isPaused;
     public Animator transition;
     public float transitionTime = 2;
@@ -22,6 +23,7 @@ public class ButtonManager : MonoBehaviour
             {
                 isPaused = true;
                 pauseMenu.SetActive(true);
+                OnScreenUI.SetActive(false);
                 Time.timeScale = 0f;
             }
         }
@@ -29,18 +31,28 @@ public class ButtonManager : MonoBehaviour
     public void ButtonStart()
     {
         Time.timeScale = 1f;
-        //LoadNextLevel();
-        SceneManager.LoadScene("RyanTestLevel", LoadSceneMode.Single);
+        LoadNextLevel();
+        //SceneManager.LoadScene("RyanTestLevel", LoadSceneMode.Single);
     }
 
     public void ButtonCredits()
     {
+        
         Time.timeScale = 1f;
+        StartCoroutine(LevelTransition(0));
+        SceneManager.LoadScene("Credits", LoadSceneMode.Single);
+    }
+
+    public void ButtonMainMenu()
+    {
+        Time.timeScale = 1f;
+        StartCoroutine(LevelTransition(0));
         SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 
     public void ButtonQuit()
     {
+        StartCoroutine(LevelTransition(0));
         Application.Quit();
     }
 
@@ -49,12 +61,22 @@ public class ButtonManager : MonoBehaviour
         Time.timeScale = 1f;
         isPaused = false;
         pauseMenu.SetActive(false);
-        
+        OnScreenUI.SetActive(true);
+
     }
 
     public void LoadNextLevel()
     {
-        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex + 1));
+        //pauseMenu.SetActive(false);
+        StartCoroutine(LoadLevel(SceneManager.GetActiveScene().buildIndex));
+    }
+
+    IEnumerator LevelTransition(int LevelIndex)
+    {
+        transition.SetTrigger("Start");
+        yield return new WaitForSeconds(transitionTime);
+
+       // SceneManager.LoadScene(LevelIndex + 1);
     }
 
     IEnumerator LoadLevel(int LevelIndex)
