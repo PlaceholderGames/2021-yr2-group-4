@@ -193,7 +193,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Character''s Creation
+  m_Text: 'Character Designer
 
     Damian'
 --- !u!222 &49223808
@@ -357,9 +357,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: 'Texture Leader
-
-    Damian'
+  m_Text: 
 --- !u!222 &144700419
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -509,7 +507,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 420, y: -220}
+  m_AnchoredPosition: {x: 0, y: -626}
   m_SizeDelta: {x: 350, y: 95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &502854343
@@ -783,7 +781,7 @@ MonoBehaviour:
     m_LineSpacing: 1
   m_Text: 'Special Thanks
 
-    Josh, (And the other guy)'
+    Josh'
 --- !u!222 &866365049
 CanvasRenderer:
   m_ObjectHideFlags: 0
@@ -907,7 +905,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 1}
   m_AnchorMax: {x: 0.5, y: 1}
-  m_AnchoredPosition: {x: 0, y: -220}
+  m_AnchoredPosition: {x: 0, y: -233}
   m_SizeDelta: {x: 290, y: 95}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &922310040
