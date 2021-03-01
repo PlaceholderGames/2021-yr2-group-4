@@ -15,6 +15,9 @@ EditorBuildSettings:
     path: Assets/Project/Scenes/Level1.unity
     guid: e2788ac6b39ed82478e2cdbc69f89666
   - enabled: 1
+    path: Assets/Project/Scenes/MainLabyrinthLevel.unity
+    guid: 37420536fbf1ae448a01cf4ec55b8820
+  - enabled: 1
     path: Assets/Project/Scenes/Credits.unity
     guid: fa1842c87e766884e810d3aecec52deb
   m_configObjects: {}
