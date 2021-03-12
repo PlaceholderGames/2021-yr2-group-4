@@ -148,8 +148,8 @@ Material:
     - _Cutoff: 0.5
     - _DetailNormalMapScale: 1
     - _DstBlend: 0
-    - _Falloff01: 0.27
-    - _Falloff02: 0.224
+    - _Falloff01: 0.619
+    - _Falloff02: 0.658
     - _Falloff03: 0
     - _Falloff04: 0.597
     - _GlossMapScale: 1
@@ -173,7 +173,7 @@ Material:
     - _TopMetallic: 0
     - _UVOffset: 5
     - _UVSec: 0
-    - _WaterEdge: 0.395
+    - _WaterEdge: 0.289
     - _ZWrite: 1
     - _offset: 0.5
     - _waterLevel: 0.679
@@ -184,3 +184,4 @@ Material:
     - _GrassColor: {r: 1, g: 1, b: 1, a: 1}
     - _TintColor: {r: 0.5, g: 0.5, b: 0.5, a: 0.5}
     - _WaterColor: {r: 0.82774115, g: 0.8396226, b: 0.8288213, a: 1}
+  m_BuildTextureStacks: []

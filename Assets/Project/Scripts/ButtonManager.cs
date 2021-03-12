@@ -7,7 +7,7 @@ public class ButtonManager : MonoBehaviour
 {
     public GameObject pauseMenu;
     public GameObject OnScreenUI;
-    public bool isPaused;
+    private bool isPaused;
     public Animator transition;
     public float transitionTime = 2;
 
@@ -58,11 +58,11 @@ public class ButtonManager : MonoBehaviour
 
     public void ResumeGame()
     {
-        Time.timeScale = 1f;
+        
         isPaused = false;
         pauseMenu.SetActive(false);
         OnScreenUI.SetActive(true);
-
+        Time.timeScale = 1f;
     }
 
     public void LoadNextLevel()
