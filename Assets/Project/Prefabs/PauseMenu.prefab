@@ -369,7 +369,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pauseMenu: {fileID: 5569493945935494317}
   OnScreenUI: {fileID: 3824340028933924231}
-  isPaused: 0
   transition: {fileID: 0}
   transitionTime: 2
 --- !u!1 &5569493945537300187
@@ -1083,7 +1082,7 @@ MonoBehaviour:
     m_HorizontalOverflow: 0
     m_VerticalOverflow: 0
     m_LineSpacing: 1
-  m_Text: MainMenu Test
+  m_Text: Credits
 --- !u!1 &5569493946938303271
 GameObject:
   m_ObjectHideFlags: 0

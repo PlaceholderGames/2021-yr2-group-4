@@ -39,15 +39,15 @@ public class ButtonManager : MonoBehaviour
     {
         
         Time.timeScale = 1f;
-        StartCoroutine(LevelTransition(0));
-        SceneManager.LoadScene("Credits", LoadSceneMode.Single);
+        StartCoroutine(LevelTransition(1));
+        //SceneManager.LoadScene("Credits", LoadSceneMode.Single);
     }
 
     public void ButtonMainMenu()
     {
         Time.timeScale = 1f;
-        StartCoroutine(LevelTransition(0));
-        SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
+        StartCoroutine(LevelTransition(2));
+        //SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 
     public void ButtonQuit()
@@ -76,7 +76,7 @@ public class ButtonManager : MonoBehaviour
         transition.SetTrigger("Start");
         yield return new WaitForSeconds(transitionTime);
 
-       // SceneManager.LoadScene(LevelIndex + 1);
+        SceneManager.LoadScene(LevelIndex);
     }
 
     IEnumerator LoadLevel(int LevelIndex)

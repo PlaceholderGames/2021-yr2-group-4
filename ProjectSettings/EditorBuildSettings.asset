@@ -9,6 +9,9 @@ EditorBuildSettings:
     path: Assets/Project/Scenes/WarningScreen.unity
     guid: d13ce9409e1a87c4fbdba39bcc7097e5
   - enabled: 1
+    path: Assets/Project/Scenes/Credits.unity
+    guid: fa1842c87e766884e810d3aecec52deb
+  - enabled: 1
     path: Assets/Project/Scenes/MainMenu.unity
     guid: e91bf6e254b61304bb273bf25acbccc9
   - enabled: 1
@@ -20,7 +23,4 @@ EditorBuildSettings:
   - enabled: 1
     path: Assets/Project/Scenes/MainLabyrinthLevel.unity
     guid: 37420536fbf1ae448a01cf4ec55b8820
-  - enabled: 1
-    path: Assets/Project/Scenes/Credits.unity
-    guid: fa1842c87e766884e810d3aecec52deb
   m_configObjects: {}
