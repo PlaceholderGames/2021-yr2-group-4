@@ -6,21 +6,21 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
-    path: Assets/Project/Scenes/WarningScreen.unity
+    path: Assets/Project/Scenes/Ryan/WarningScreen.unity
     guid: d13ce9409e1a87c4fbdba39bcc7097e5
   - enabled: 1
-    path: Assets/Project/Scenes/Credits.unity
+    path: Assets/Project/Scenes/Ryan/Credits.unity
     guid: fa1842c87e766884e810d3aecec52deb
   - enabled: 1
-    path: Assets/Project/Scenes/MainMenu.unity
+    path: Assets/Project/Scenes/Ryan/MainMenu.unity
     guid: e91bf6e254b61304bb273bf25acbccc9
   - enabled: 1
-    path: Assets/Project/Scenes/RyanTestLevel.unity
+    path: Assets/Project/Scenes/Ryan/RyanTestLevel.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
-    path: Assets/Project/Scenes/Level1.unity
+    path: Assets/Project/Scenes/Ryan/Level1.unity
     guid: e2788ac6b39ed82478e2cdbc69f89666
   - enabled: 1
-    path: Assets/Project/Scenes/MainLabyrinthLevel.unity
+    path: Assets/Project/Scenes/Ryan/MainLabyrinthLevel.unity
     guid: 37420536fbf1ae448a01cf4ec55b8820
   m_configObjects: {}
