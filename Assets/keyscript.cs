@@ -5,9 +5,11 @@ using UnityEngine;
 public class keyscript : MonoBehaviour
 {
     // Start is called before the first frame update
+    AudioSource aS;
     void Start()
     {
-        
+        aS = GetComponent<AudioSource>();
+        aS.Play();
     }
 
     // Update is called once per frame
@@ -18,6 +20,7 @@ public class keyscript : MonoBehaviour
 
     private void OnTriggerEnter(Collider other)
     {
+        
         Destroy(gameObject);
     }
 }
