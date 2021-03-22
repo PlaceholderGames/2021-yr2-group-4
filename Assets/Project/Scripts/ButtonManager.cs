@@ -39,14 +39,15 @@ public class ButtonManager : MonoBehaviour
     {
         
         Time.timeScale = 1f;
-        StartCoroutine(LevelTransition(1));
+        //Make sure number is updated correctly
+        StartCoroutine(LevelTransition(5));
         //SceneManager.LoadScene("Credits", LoadSceneMode.Single);
     }
 
     public void ButtonMainMenu()
     {
         Time.timeScale = 1f;
-        StartCoroutine(LevelTransition(2));
+        StartCoroutine(LevelTransition(1));
         //SceneManager.LoadScene("MainMenu", LoadSceneMode.Single);
     }
 
