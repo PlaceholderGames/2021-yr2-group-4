@@ -9,6 +9,7 @@ TagManager:
   - PressurePad
   - Ground
   - Generated
+  - Interactive Object
   layers:
   - Default
   - TransparentFX

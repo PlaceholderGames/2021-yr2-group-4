@@ -31,7 +31,7 @@ public class Enemy : MonoBehaviour
 
     void FollowPlayer()
     {
-        myNavmesh.transform.LookAt(playerTransform);
+        //myNavmesh.transform.LookAt(playerTransform);
         myNavmesh.destination = playerTransform.position;
     }
 }
