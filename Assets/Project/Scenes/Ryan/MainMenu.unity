@@ -3076,6 +3076,16 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 1359493751643135612, guid: 1a2bbf281461c6b4396fc0bfb365552d,
+        type: 3}
+      propertyPath: m_MouseLook.MinimumX
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 1359493751643135612, guid: 1a2bbf281461c6b4396fc0bfb365552d,
+        type: 3}
+      propertyPath: m_MouseLook.MaximumX
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 1359493751643135613, guid: 1a2bbf281461c6b4396fc0bfb365552d,
         type: 3}
       propertyPath: m_Enabled
