@@ -13,7 +13,7 @@ public class ButtonManager : MonoBehaviour
 
     void Update()
     {
-        if(Input.GetKeyDown(KeyCode.P))
+        if(Input.GetKeyDown(KeyCode.Escape))
         {
             if(isPaused)
             {
@@ -25,6 +25,7 @@ public class ButtonManager : MonoBehaviour
                 pauseMenu.SetActive(true);
                 OnScreenUI.SetActive(false);
                 Time.timeScale = 0f;
+                Cursor.lockState = CursorLockMode.None;
             }
         }
     }
@@ -64,6 +65,7 @@ public class ButtonManager : MonoBehaviour
         pauseMenu.SetActive(false);
         OnScreenUI.SetActive(true);
         Time.timeScale = 1f;
+        Cursor.lockState = CursorLockMode.Locked ;
     }
 
     public void LoadNextLevel()
